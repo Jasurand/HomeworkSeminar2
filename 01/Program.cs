@@ -5,3 +5,8 @@
 Console.Clear();
 Console.Write("Введите, пожалуйста, любое число, которое вам нравится, и мы проверим делится ли ваше число и на 7 и на 23. Напишите его здесь: ");
 int number = int.Parse(Console.ReadLine()!);
+if (number % 7 == 0 && number % 23 == 0)
+    Console.WriteLine($"Ваше число {number} делится и на 7 (number % 7) и на 23 (number % 23)");
+else
+    Console.WriteLine($"ИЗвините, но ваше число не делится одновременно на 7 и 23");
+    
