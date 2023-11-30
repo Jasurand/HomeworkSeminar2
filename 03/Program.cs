@@ -7,9 +7,7 @@ Console.Write("Введите, пожалуйста, любое число ме�
 int number = int.Parse(Console.ReadLine()!);
 if (number < 10 || number > 99)
     Console.WriteLine("Вы ввели неверное число!");
-else if (number / 10 == number % 10)
-    Console.WriteLine($"Обе цифры в этом числе равны ({number / 10})");
 else if ((number / 10) > (number % 10))
-    Console.WriteLine($"{number / 10} > {number % 10}");
-else if ((number / 10 < number % 10))
-    Console.WriteLine($"{number / 10} < {number % 10}");
+    Console.WriteLine(number / 10);
+else 
+    Console.WriteLine(number % 10);
